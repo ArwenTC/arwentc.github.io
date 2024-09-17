@@ -5,6 +5,12 @@ li {
 li {
     float: left;
   }
+  
+a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+  }
 
 ul {
     list-style-type: none;
