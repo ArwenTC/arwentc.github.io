@@ -1,0 +1,49 @@
+/*Removes the site margins*/
+body {
+    margin:0;
+}
+
+/*Sets up the site navbar settings*/
+.navbar {
+
+    width:100%;
+    height:50px;
+
+    border: 5px;
+    border-color: black;
+
+    background-color: #405050;
+}
+
+/*Sets up the list information*/
+.navbar ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color: #405050;
+}
+
+/*Sets list item default hover*/
+.navbar li {
+    float:left;
+}
+.navbar li.right {
+    float:right;
+}
+
+/*List Block Item*/
+.navbar li a {
+    display: block;
+
+    text-decoration: none;
+    color:white;
+    text-align:center;
+    padding: 15px 15px;
+    background-color: #405050;
+}
+
+/*Hover Color List Block Item*/
+.navbar li a:hover {
+    background-color: #406060;
+}
