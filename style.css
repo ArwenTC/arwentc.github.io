@@ -1,12 +1,12 @@
 /*Minecraft font*/
 @font-face {
     font-family: 'minecraft';
-    src: url(font/minecraft.reg.ttf);
+    src: url(minecraft.reg.ttf);
 }
 
 /*Removes the site margins*/
 body {
-    margin:0;
+    margin:0px;
     background-color:#203030;
     font-family:'minecraft', sans-serif;
 }
@@ -17,8 +17,7 @@ body {
     width:100%;
     height:50px;
 
-    border: 5px;
-    border-color: black;
+    margin:0px;
 
     background-color: #405050;
 }
@@ -54,4 +53,18 @@ body {
 /*Hover Color List Block Item*/
 .navbar li a:hover {
     background-color: #406060;
+}
+
+/*Site Content area w/ margin*/
+.content {
+    width:100%;
+    height:100%;
+    margin:30px / 30px / 30px / 30px;
+    background-color: #102020;
+}
+
+/*About me section on home page*/
+.about {
+    margin:10px;
+    background-color: #203030;
 }
