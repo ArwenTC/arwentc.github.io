@@ -5,12 +5,6 @@ li {
 li {
     float: left;
   }
-  
-a {
-    display: block;
-    padding: 8px;
-    background-color: #dddddd;
-  }
 
 ul {
     list-style-type: none;
@@ -32,7 +26,6 @@ li a {
     text-decoration: none;
   }
   
-  /* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
   }
