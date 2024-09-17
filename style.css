@@ -1,6 +1,14 @@
+/*Minecraft font*/
+@font-face {
+    font-family: 'minecraft';
+    src: url(font/minecraft.reg.ttf);
+}
+
 /*Removes the site margins*/
 body {
     margin:0;
+    background-color:#203030;
+    font-family:'minecraft', sans-serif;
 }
 
 /*Sets up the site navbar settings*/
