@@ -64,6 +64,7 @@ body {
 /*About me section on home page*/
 .about {
     width:96%;
+    height:100%;
     margin:auto;
     background-color: #203030;
 }
