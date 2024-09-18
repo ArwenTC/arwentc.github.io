@@ -73,17 +73,25 @@ body {
 */
 
 /*About me section on home page*/
-.header {
-    color:white;
-    margin-bottom: 0;
-    padding: 5px;
-    margin-top: 1%;
+.content_desc {
+    width:96%;
+    height:100%;
+    margin:auto;
     background-color: #203030;
-    text-align: center;
+}
+
+.title_center {
+    /*margin-left:10px;*/
+    text-align:center;
+    color:white;
+    text-decoration: none;
 }
 
 .content_center {
+    /*margin-left:10px;*/
+    text-align:center;
     color:white;
+    text-decoration: none;
 }
 
 /*
@@ -93,11 +101,6 @@ body {
 */
 
 /*Portfolio image grid*/
-.gallery {
-    margin: 15px;
-
-}
-
 .portfolio {
     border: 1px solid #ccc;
 }
@@ -126,7 +129,6 @@ body {
     float: left;
     width: 24.99999%;
     box-sizing: border-box;
-    background-color:#203030;
 }
   
 @media only screen and (max-width: 700px) {
