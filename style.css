@@ -1,7 +1,7 @@
 /*Minecraft font*/
 @font-face {
     font-family: 'minecraft';
-    src: url(mediafire.com/file/ybwoqep6ut8b8s3/Minecraft-Seven_v2.ttf/file);
+    src: url(https://troresco.uk/minecrafter.reg.ttf);
 }
 
 /*Removes the site margins*/
@@ -47,7 +47,6 @@ body {
     color:white;
     text-align:center;
     padding: 15px 15px;
-    background-color: #405050;
 }
 
 /*Hover Color List Block Item*/
@@ -55,17 +54,17 @@ body {
     background-color: #406060;
 }
 
-/*Site Content area w/ margin*/
-.content {
+.content_area {
+    background-color:#102020;
     width:100%;
     height:100%;
-    margin:30px / 30px / 30px / 30px;
-    background-color: #102020;
+    position:absolute;
 }
 
 /*About me section on home page*/
 .about {
-    margin:10px;
+    width:96%;
+    margin:auto;
     background-color: #203030;
 }
 
@@ -119,4 +118,16 @@ div.desc {
     content: "";
     display: table;
     clear: both;
+.title_center {
+    /*margin-left:10px;*/
+    text-align:center;
+    color:white;
+    text-decoration: none;
+}
+
+.content_center {
+    /*margin-left:10px;*/
+    text-align:center;
+    color:white;
+    text-decoration: none;
 }
