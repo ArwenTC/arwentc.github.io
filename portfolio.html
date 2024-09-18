@@ -8,13 +8,17 @@
         <title>ArwenOC - Portfolio</title>
     </head>
     <body>
-        <div class="navbar">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./portfolio.html">Portfolio</a></li>
-                <li class= "right"><a href="./contact.html">Contact Me</a></li>
-            </ul>
+
+        <div class="navbar" id="nav">
+            <a href="./index.html">Home</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./portfolio.html"class="active">Portfolio</a>
+            <div class="navbar_right">
+                <a href="./contact.html">Contact Me</a>
+              </div>
+            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+              <i class="fa fa-bars"></i>
+            </a>
         </div>
 
             <div class="content_area">
@@ -24,5 +28,6 @@
                     <a href="./index.html"><p class="content_center">Return to home</p>
                 </div>
             </div>
+        <script src='scripts.js'></script>
     </body>
 </html>
