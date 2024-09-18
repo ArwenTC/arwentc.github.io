@@ -1,8 +1,8 @@
 /*Minecraft font*/
-/*@font-face {
+@font-face {
     font-family: 'minecraft';
-    src: url(https://troresco.uk/minecrafter.reg.ttf);
-}*.
+    src: url(./minecraft_font.woff);
+}
 
 /* Removes color from visited links */
 a { text-decoration: none; }
@@ -15,8 +15,8 @@ a:hover, a:active { text-decoration: none; }
 body {
     margin:0px;
     background-color:#102020;
-    /*font-family:'minecraft', sans-serif;*/
-    font-family: sans-serif;
+    font-family:'minecraft', sans-serif;
+    /*font-family: sans-serif;*/
 }
 
 /*

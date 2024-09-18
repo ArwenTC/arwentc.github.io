@@ -1,3 +1,5 @@
+
+// Hamburger menu function
 // Credit : w3schools
 // Link : https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 function hamburger() {
@@ -16,4 +18,9 @@ function hamburger() {
       // Sets hamborgir image
       y.src = "images/hamburger.png";
     }
+}
+
+// SS4 Link function
+function ss4() {
+    window.location.href = "http://www.w3schools.com";
 }
