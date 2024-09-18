@@ -97,27 +97,27 @@ body {
 
 /*
 
-### Projects Page
+### Portfolio Page
 
 */
 
-/*Projects image grid*/
-.projects {
+/*Portfolio image grid*/
+.portfolio {
     border: 1px solid #ccc;
 }
 
-/*Projects image grid hover border*/
-.projects:hover {
+/*portfolio image grid hover border*/
+.portfolio:hover {
     border: 1px solid #777;
 }
   
-/*Project image format*/
-.projects img {
+/*portfolio image format*/
+.portfolio img {
     width: 100%;
     height: auto;
 }
 
-/*Project image description*/
+/*portfolio image description*/
 .desc {
     color:white;
     padding: 15px;
