@@ -61,9 +61,10 @@ body {
 }
 
 .content_area {
+    display:flex;
     width:100%;
-    height:100%;
-    position:absolute;
+    min-height:100%;
+    margin:0;
 }
 
 /*
@@ -92,4 +93,41 @@ body {
     text-align:center;
     color:white;
     text-decoration: none;
+}
+
+/*
+
+### Project Items
+
+*/
+
+/* Grid layout object */
+.project_list {
+    display:grid;
+
+    width:100%;
+    height:100%;
+
+    margin-top:30px;
+
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-auto-rows: 400px;
+}
+
+.project_item {
+    width:95%;
+    height:95%;
+
+    margin:auto;
+
+    text-decoration:none;
+    color:white;
+    
+    background-color:#102020;
+
+    text-align:center;
+}
+
+.project_item:hover{
+    background-color:#102020;
 }
