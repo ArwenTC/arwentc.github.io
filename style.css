@@ -11,6 +11,12 @@ body {
     font-family:'minecraft', sans-serif;
 }
 
+/*
+
+### Navigation bar
+
+*/
+
 /*Sets up the site navbar settings*/
 .navbar {
 
@@ -61,45 +67,69 @@ body {
     position:absolute;
 }
 
+/*
+
+### Content description for pages
+
+*/
+
 /*About me section on home page*/
-.about {
+.content_desc {
     width:96%;
     height:100%;
     margin:auto;
     background-color: #203030;
 }
 
+.title_center {
+    /*margin-left:10px;*/
+    text-align:center;
+    color:white;
+    text-decoration: none;
+}
 
+.content_center {
+    /*margin-left:10px;*/
+    text-align:center;
+    color:white;
+    text-decoration: none;
+}
 
+/*
 
+### Projects Page
 
-/*projects image grid*/
-div.projects {
+*/
+
+/*Projects image grid*/
+.projects {
     border: 1px solid #ccc;
 }
-  
-div.projects:hover {
+
+/*Projects image grid hover border*/
+.projects:hover {
     border: 1px solid #777;
 }
   
-div.projects img {
+/*Project image format*/
+.projects img {
     width: 100%;
     height: auto;
 }
-  
-div.desc {
+
+/*Project image description*/
+.desc {
+    color:white;
     padding: 15px;
     text-align: center;
 }
-  
-  * {
-    box-sizing: border-box;
-}
-  
+
+/* Responsive Element */
 .responsive {
     padding: 0 6px;
     float: left;
     width: 24.99999%;
+    box-sizing: border-box;
 }
   
 @media only screen and (max-width: 700px) {
@@ -119,16 +149,4 @@ div.desc {
     content: "";
     display: table;
     clear: both;
-.title_center {
-    /*margin-left:10px;*/
-    text-align:center;
-    color:white;
-    text-decoration: none;
-}
-
-.content_center {
-    /*margin-left:10px;*/
-    text-align:center;
-    color:white;
-    text-decoration: none;
 }
