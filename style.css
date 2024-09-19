@@ -1,7 +1,13 @@
 /*Minecraft font*/
 @font-face {
     font-family: 'minecraft';
-    src: url(./minecrafia.reg.woff);
+    src: url(./minecraft.reg.woff);
+}
+
+/*Minecraft Bold font*/
+@font-face {
+    font-family: 'minecraft_bold';
+    src: url(./minecraft.bold.woff);
 }
 
 /* Removes color from visited links */
@@ -17,6 +23,11 @@ body {
     background-color:#102020;
     font-family:'minecraft', sans-serif;
     /*font-family: sans-serif;*/
+}
+
+h1 {
+    font-weight: normal;
+    font-family: 'minecraft_bold', sans-serif;
 }
 
 button {
@@ -139,6 +150,26 @@ button {
     background-color: #203030;
 }
 
+/* Block for section title */
+.content_section_title {
+    display:inline-block;
+
+    width:100%;
+    height:30px;
+    margin:auto;
+
+    text-align:center;
+
+    color: #102020;
+    background-color: #406060;
+}
+
+/* Section title text */
+.content_section_title_text {
+    display:block;
+    margin-top:8px;
+}
+
 .title_center {
     /*margin-left:10px;*/
     text-align:center;
@@ -227,3 +258,95 @@ button {
     margin-top:0px;
     margin-bottom:30px;
 }
+
+
+/*
+
+### Portfolio Items
+
+*/
+
+/* Grid layout object */
+.portfolio_list {
+    display:grid;
+
+    width:100%;
+    height:100%;
+
+    margin-top:0px;
+
+    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    grid-auto-rows: auto;
+}
+
+/* Changes column count depending on screen size */
+@media screen and (max-width: 1200px) and (min-width:1001px) {
+    .portfolio_list {
+        grid-template-columns: 14.285% 14.285% 14.285% 14.285% 14.285% 14.285% 14.285%;
+    }
+}
+/* Changes column count depending on screen size */
+@media screen and (max-width: 1000px) and (min-width:801px) {
+    .portfolio_list {
+        grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%;
+    }
+}
+/* Changes column count depending on screen size */
+@media screen and (max-width: 800px) and (min-width:601px) {
+    .portfolio_list {
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    } 
+}
+/* Changes column count depending on screen size */
+@media screen and (max-width: 600px) {
+    .portfolio_list {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+
+/* Item in the project bar */
+.portfolio_item {
+    width:100%;
+    height:100%;
+
+    margin:auto;
+  
+    background-color:#102020;
+}
+
+/* Hover color for project item */
+.portfolio_item:hover{
+    background-color:#001010;
+}
+
+/* Project image settings */
+.portfolio_image {
+    display:block;
+    outline-style:solid;
+    outline-color:#001010;
+    outline-width:0px;
+    margin:auto;
+    margin-top:2.5%;
+
+    align-self:center;
+    
+    width:95%;
+    height:95%;
+}
+
+/* Project title text data
+.project_title_text {
+    text-align:center;
+    color:white;
+    text-decoration:none;
+    margin-top:10px;
+}
+
+/* Project description text data 
+.project_description_text {
+    text-align:center;
+    color:rgb(150, 150, 150);
+    text-decoration:none;
+    margin-top:0px;
+    margin-bottom:30px;
+}*/
