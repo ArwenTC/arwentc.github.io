@@ -201,6 +201,12 @@ button {
     align-items:center;
     margin:5px;
 }
+.content_image_block_alt {
+    display:flex;
+    width:60%;
+    align-items:center;
+    margin:auto;
+}
 
 .content_image {
     display:inline-block;
@@ -210,74 +216,27 @@ button {
     vertical-align: middle;
 }
 
-/* Replaceable content for home page */
-.content_image_replace {
-    display:inline-block;
-    width:100%;
-    height:auto;
-    position:relative;
-    vertical-align: middle;
+.content_area_replace {
+    display:block;
+    width:96%;
+    height:100%;
+    margin:auto;
+    background-color: #203030;
 }
-.content_image_replace_1 {
+.content_area_replace_1 {
     display:none;
-    width:100%;
-    height:auto;
-    position:relative;
-    vertical-align: middle;
-}
-.content_image_replace_2 {
-    display:none;
-    width:100%;
-    height:auto;
-    position:relative;
-    vertical-align: middle;
+    width:96%;
+    height:100%;
+    margin:auto;
+    background-color: #203030;
 }
 /* Replaceable content for home page */
-@media screen and (max-width: 1250px) and (min-width: 751px) {
-    .content_image_replace {
+@media screen and (max-width: 850px) {
+    .content_area_replace {
         display:none;
-        width:100%;
-        height:auto;
-        position:relative;
-        vertical-align: middle;
     }
-    .content_image_replace_1 {
-        display:inline-block;
-        width:100%;
-        height:auto;
-        position:relative;
-        vertical-align: middle;
-    }
-    .content_image_replace_2 {
-        display:none;
-        width:100%;
-        height:auto;
-        position:relative;
-        vertical-align: middle;
-    }
-}
-/* Replaceable content for home page */
-@media screen and (max-width: 750px) {
-    .content_image_replace {
-        display:none;
-        width:100%;
-        height:auto;
-        position:relative;
-        vertical-align: middle;
-    }
-    .content_image_replace_1 {
-        display:none;
-        width:100%;
-        height:auto;
-        position:relative;
-        vertical-align: middle;
-    }
-    .content_image_replace_2 {
-        display:inline-block;
-        width:100%;
-        height:auto;
-        position:relative;
-        vertical-align: middle;
+    .content_area_replace_1 {
+        display:block;
     }
 }
 
