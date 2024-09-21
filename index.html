@@ -5,16 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        
         <title>ArwenOC - Home</title>
     </head>
     <body>
-
         <div class="navbar" id="nav">
-            <a href="./index.html" class="nav_link active">Home</a>
-            <a href="./projects.html"class="nav_link">Projects</a>
-            <a href="./portfolio.html"class="nav_link">Portfolio</a>
-            <div class="navbar_right"class="nav_link">
+            <div class="navbar_left", id="nav_icon">
+                <a class= "nav_icon">
+                    <img src="images/other/logo.png", class="nav_icon_img"></img>
+                </a>
+            </div> 
+            <div class="navbar_left">
+                <a href="./index.html"class="nav_link active">Home</a>
+            </div>
+            <div class="navbar_left">
+                <a href="./projects.html"class="nav_link">Projects</a>
+            </div>
+            <a href="./portfolio.html"class="nav_link", class="mobile_visible">Portfolio</a>
+            <a href="./tools.html"class="nav_link">Tools</a>
+            <div class="navbar_right">
                 <a href="./contact.html"class="nav_link">Contact Me</a>
             </div>
             <!-- Creates a hamburger drop down menu, running hamburger() on click -->

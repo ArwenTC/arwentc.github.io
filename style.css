@@ -51,24 +51,30 @@ button {
 }
   
 /* Navbar item setttings */
-.navbar a {
+.nav_link {
     float: left;
     display: block;
     background-color: #405050;
     color: white;
     text-align: center;
     padding: 16px 16px;
+    padding-top: 20px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 22px;
 }
 
-/* Sets about me navbar item to the right */
+/* Sets home item to the right */
+.navbar_left a {
+    float: left;
+}
+
+/* Sets contact me item to the right */
 .navbar_right a {
     float: right;
 }
   
 /* Sets hover color for navbar items */
-.navbar a:hover {
+.nav_link:hover {
     background-color: #406060;
 }
 
@@ -100,15 +106,43 @@ button {
     right:0px;
 }
 
+.nav_icon {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 0px 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin:0px;
+    text-decoration: none;
+}
+.nav_icon_img {
+    padding-top:2px;
+    height:52px;
+    width:auto;
+    display:block;
+}
+
 /* Sets navbar at low screen size, adding drop down */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 756px) {
     
     /* Sets normal navbar data */
-    .navbar a:not(:first-child) {
+    .navbar a {
         display: none;
     }
-    .navbar_right a {
+    .nav_icon {
         float: left;
+        display:block;
+    }
+    .nav_icon_img {
+        display:block;
+    }
+    .navbar_left a {
+        float: left;
+        display:block;
+    }
+    .navbar_right a {
+        display:none;
     }
     .navbar .icon {
         float: right;
