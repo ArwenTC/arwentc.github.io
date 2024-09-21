@@ -185,6 +185,141 @@ button {
     background-color: #203030;
 }
 
+.content_block {
+    display:grid;
+    grid-template-columns: 33.4% 66.6%;
+    grid-auto-rows: auto;
+}
+.content_block_2 {
+    display:grid;
+    grid-template-columns: 66.6% 33.4%;
+    grid-auto-rows: auto;
+}
+
+.content_image_block {
+    display:flex;
+    align-items:center;
+    margin:5px;
+}
+
+.content_image {
+    display:inline-block;
+    width:100%;
+    height:auto;
+    position:relative;
+    vertical-align: middle;
+}
+
+/* Replaceable content for home page */
+.content_image_replace {
+    display:inline-block;
+    width:100%;
+    height:auto;
+    position:relative;
+    vertical-align: middle;
+}
+.content_image_replace_1 {
+    display:none;
+    width:100%;
+    height:auto;
+    position:relative;
+    vertical-align: middle;
+}
+.content_image_replace_2 {
+    display:none;
+    width:100%;
+    height:auto;
+    position:relative;
+    vertical-align: middle;
+}
+/* Replaceable content for home page */
+@media screen and (max-width: 1250px) and (min-width: 751px) {
+    .content_image_replace {
+        display:none;
+        width:100%;
+        height:auto;
+        position:relative;
+        vertical-align: middle;
+    }
+    .content_image_replace_1 {
+        display:inline-block;
+        width:100%;
+        height:auto;
+        position:relative;
+        vertical-align: middle;
+    }
+    .content_image_replace_2 {
+        display:none;
+        width:100%;
+        height:auto;
+        position:relative;
+        vertical-align: middle;
+    }
+}
+/* Replaceable content for home page */
+@media screen and (max-width: 750px) {
+    .content_image_replace {
+        display:none;
+        width:100%;
+        height:auto;
+        position:relative;
+        vertical-align: middle;
+    }
+    .content_image_replace_1 {
+        display:none;
+        width:100%;
+        height:auto;
+        position:relative;
+        vertical-align: middle;
+    }
+    .content_image_replace_2 {
+        display:inline-block;
+        width:100%;
+        height:auto;
+        position:relative;
+        vertical-align: middle;
+    }
+}
+
+.content_text_section {
+    display:inline-block;
+    margin: 15px;
+    height:auto;
+    width:auto;
+    background: #102020;
+    color:white;
+}
+
+.content_text_section_title {
+    background:#001010;
+    margin-top: 0px;
+}
+.content_text_section h1 {
+    text-align:center;
+    font-weight: normal;
+    margin-left:5px;
+    margin-right:5px;
+    height:auto;
+}
+.content_text_section h2 {
+    text-align:left;
+    font-weight: normal;
+    margin-left:10px;
+    margin-right:10px;
+    font-family:'minecraft_bold';
+}
+.content_text_section b {
+    font-family:'minecraft_bold';
+    font-weight: normal;
+}
+.content_text_section p {
+    text-align:left;
+    font-weight: normal;
+    line-height:1.6;
+    margin-left:12px;
+    margin-right:12px;
+}
+
 /* Block for section title */
 .content_section_title {
     display:inline-block;
@@ -400,12 +535,12 @@ button {
 
     margin:auto;
   
-    background-color:#102020;
+    background-color:#203030;
 }
 
 /* Hover color for project item */
 .portfolio_item:hover{
-    background-color:#001010;
+    background-color:#102020;
 }
 
 /* Project image settings */
