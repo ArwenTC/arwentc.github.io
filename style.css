@@ -240,6 +240,28 @@ button {
     }
 }
 
+.contact_container {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+.contact_image_container {
+    display:flex;
+    margin:10px;
+}
+.contact_image {
+    width:40px;
+    height:auto;
+}
+.contact_container a {
+    color:white;
+    font-family: 'minecraft_bold';
+    font-size:20px;
+    text-align:center;
+}
+
 .content_text_section {
     display:inline-block;
     margin: 15px;
