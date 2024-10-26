@@ -539,6 +539,166 @@ button {
     height:95%;
 }
 
+.tool_form {
+
+    display:block;
+    background-color: #203030;
+    color:white;
+
+    margin:auto;
+    width:100%;
+    height:100%;
+    align-self:center;
+
+}
+
+.tool_form_textarea {
+    display:block;
+    background-color: #001010;
+
+    color:white;
+    padding:10px;
+
+    border-color:#001010;
+    line-height: 17px;
+
+    margin:auto;
+    width:95%;
+    max-width:95%;
+    min-width:95%;
+    height:auto;
+
+    overflow-y:scroll;
+
+    font-family:'minecraft', sans-serif;
+    font-weight: normal;
+}
+
+.tool_form_label {
+    display:block;
+    width:95%;
+    height:auto;
+    
+    color:white;
+    background-color:#102020;
+    
+    align-self:center;
+    text-align:center;
+
+    margin:auto;
+    margin-top:5px;
+    padding:10px;
+}
+
+.tool_form_textarea {
+    display:block;
+    background-color: #001010;
+
+    color:white;
+    padding:10px;
+
+    border-color:#001010;
+    line-height: 17px;
+
+    margin:auto;
+    width:95%;
+    max-width:95%;
+    min-width:95%;
+    height:auto;
+
+    overflow-y:scroll;
+
+    font-family:'minecraft', sans-serif;
+    font-weight: normal;
+}
+
+.tool_form_settings_option {
+
+    display:block;
+    width:90%;
+    height:auto;
+
+}
+
+.tool_form_input {
+    display:block;
+    background-color: #001010;
+
+    color:white;
+    padding:10px;
+
+    border-color:#001010;
+
+    margin:auto;
+    width:95%;
+    max-width:95%;
+    min-width:95%;
+    height:auto;
+
+    font-family:'minecraft', sans-serif;
+    font-weight: normal;
+
+    line-height:20px;
+}
+
+.tool_settings_block {
+    display:grid;
+    grid-template-columns: 20.0% 20.0% 20.0% 20.0% 20.0%;
+    grid-auto-rows: auto;
+
+    margin:auto;
+    width:95%;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+    .tool_settings_block {
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+@media screen and (max-width: 499px) {
+    .tool_settings_block {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+.tool_form_button {
+    display:block;
+    background-color: #405050;
+
+    color:white;
+    padding:10px;
+
+    border-color:#001010;
+
+    margin:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+
+    width:95%;
+    height:auto;
+
+    font-family:'minecraft', sans-serif;
+    font-weight: normal;
+
+    line-height:20px;
+
+    outline:none;
+}
+
+/* Sets hover color for navbar items */
+.tool_form_button:hover {
+    background-color: #406060;
+}
+
+.tool_buttons_block {
+    display:grid;
+    grid-template-columns: 50.0% 50.0%;
+    grid-auto-rows: auto;
+
+    margin:auto;
+    width:360px;
+}
+
 /* Project title text data
 .project_title_text {
     text-align:center;

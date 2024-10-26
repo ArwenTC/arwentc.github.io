@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>ArwenOC - Contact</title>
+    </head>
+    <body>
+        <div class="navbar" id="nav">
+            <div class="navbar_left", id="nav_icon">
+                <a class= "nav_icon">
+                    <img src="images/other/logo.png", class="nav_icon_img"></img>
+                </a>
+            </div> 
+            <div class="navbar_left">
+                <a href="index.html"class="nav_link">Home</a>
+            </div>
+            <div class="navbar_left">
+                <a href="./projects.html"class="nav_link">Projects</a>
+            </div>
+            <a href="./portfolio.html"class="nav_link", class="mobile_visible">Portfolio</a>
+            <a href="./tools.html"class="nav_link">Tools</a>
+            <div class="navbar_right">
+                <a href="./contact.html"class="nav_link active">Contact Me</a>
+            </div>
+            <!-- Creates a hamburger drop down menu, running hamburger() on click -->
+            <button href="javascript:void(0);" class="icon" onclick="hamburger()">
+                <img class="hamburger", src="images/hamburger.png", id="hamburger">
+            </button>
+        </div>
+
+        <div class="content_background">
+            <div class="content_area">
+                <h1 class="title_center">Text Iterator</h1>
+                <p class="content_center">Input text with a placeholder, iterate the text with an increasing number.</p>
+                
+                <form class="tool_form">
+
+                    <!-- Input -->
+                    <label class="tool_form_label" for="input_text">Input Text</label>
+                    <textarea class="tool_form_textarea" id="input_text" name="input_text">Replace: [x]</textarea>
+                    
+                    <!-- Settings -->
+                    <div class="tool_settings_block">
+                        <div class="tool_form_settings_option">
+                            <label class="tool_form_label" for="setting_start">Start At</label>
+                            <input class="tool_form_input" type="text" id="setting_start" name="setting_start" value="0"></textarea>
+                        </div>
+                        <div class="tool_form_settings_option">
+                            <label class="tool_form_label" for="setting_end">End At</label>
+                            <input class="tool_form_input" type="text" id="setting_end" name="setting_end" value="2"></textarea>
+                        </div>
+                        <div class="tool_form_settings_option">
+                            <label class="tool_form_label" for="etting_replace">Replace</label>
+                            <input class="tool_form_input" type="text" id="setting_replace" name="setting_replace" value="[x]"></textarea>
+                        </div>
+                        <div class="tool_form_settings_option">
+                            <label class="tool_form_label" for="setting_increment">Increment</label>
+                            <input class="tool_form_input" type="text" id="setting_increment" name="setting_increment" value="1"></textarea>
+                        </div>
+                        <div class="tool_form_settings_option">
+                            <label class="tool_form_label" for="setting_digit">Digits</label>
+                            <input class="tool_form_input" type="text" id="setting_digit" name="setting_digit" value="1"></textarea>
+                        </div>
+                    </div>
+
+                    <div class = "tool_buttons_block">
+                    <!-- Generate Button -->
+                    <input class="tool_form_button" type="button" id="input_button" name="input_button" value="Generate"></input>
+                    <!-- JQuery Script for generating text-->
+                    <script>
+                        document.getElementById("input_button").onclick = function() {
+                            
+                            // Collects all the info from the input fields
+                            var input = $("#input_text").val();
+
+                            var setting_replace = $("#setting_replace").val();
+
+                            // Checks invalid cases
+                            var setting_start = Number($("#setting_start").val());
+                            var setting_end = Number($("#setting_end").val());
+                            var setting_increment = Number($("#setting_increment").val());
+                            var setting_digit = Number($("#setting_digit").val());
+
+                            // Create output variable
+                            var output="";
+                            var error = false;
+                            
+                            // Checks if each value collected is a number and appends an error if not
+                            if (isNaN(setting_start)) {
+                                output += "Error: 'Start At' should be a number.\n";
+                                error=true;
+                            }
+                            if (isNaN(setting_end)) {
+                                output += "Error: 'End At' should be a number.\n";
+                                error=true;
+                            }
+                            if (isNaN(setting_increment)) {
+                                output += "Error: 'Increment' should be a number.\n";
+                                error=true;
+                            }
+                            if (isNaN(setting_digit)) {
+                                output += "Error: 'Digits' should be a number.\n";
+                                error=true;
+                            }
+                            // If all inputs are numbers
+                            if (!error) {
+                                if (setting_end < setting_start) {
+                                    output += "Error: 'End At' must be larger than 'Start At'.\n";
+                                    error=true;
+                                }
+                                if (setting_increment < 1) {
+                                    output += "Error: 'Increment' should be greater than 0.\n"
+                                    error=true;
+                                }
+                                if (setting_digit < 1) {
+                                    output += "Error: 'Digits' should be greater than 0.\n"
+                                    error=true;
+                                }
+                            }
+                            
+                            // If no errors are hit, runs the code
+                            if (!error) {
+                                // Gets an iteration counter
+                                let current_value = setting_start;
+                                
+                                // Loops through the increment list
+                                while (current_value <= setting_end) {
+                                    // Creates a value to pad with zeros if necessary
+                                    let replace_value = current_value.toString().padStart(setting_digit ,'0');
+                                    // Replaces the replacable text in the current string
+                                    temp_output = input.replaceAll(setting_replace, replace_value);
+                                    // Increments increment value using the increment field
+                                    current_value += setting_increment;
+                                    // Adds the output to the output text field (No \n for last case)
+                                    if (current_value <= setting_end) {
+                                        output += temp_output + "\n";
+                                    } else {
+                                        output += temp_output;
+                                    }
+                                }
+                            }
+
+                            // Sends the output to the output text field
+                            $("#output_text").val(output);
+
+                        }
+                    </script>
+                    <!-- Clipboard Button -->
+                    <input class="tool_form_button" type="button" id="copy_button" name="copy_button" value="Copy"></input>
+                    <!-- JQuery Script for generating text-->
+                    <script>
+                        document.getElementById("copy_button").onclick = function() {
+                            
+                            var output_text = $("#output_text").val()
+
+                            navigator.clipboard.writeText(output_text);
+
+                        }
+                    </script>
+                    </div>
+                    <!-- Output -->
+                    <label class="tool_form_label" for="output_text">Output Text</label>
+                    <textarea class="tool_form_textarea" rows="16" id="output_text" name="output_text">Replace: 0
+Replace: 1
+Replace: 2</textarea>
+                    
+                </form>
+                <a href="./index.html"><p class="content_center">Return to home</p></a>
+            </div>
+        </div>
+    <script src='scripts.js'></script>
+    </body>
+</html>
