@@ -39,13 +39,43 @@
                 <p class="content_center">Input text with a placeholder, iterate the text with an increasing number.</p>
                 
                 <form class="tool_form">
+                    
+                    <!-- Mode Selector-->
+                    <div class = "tool_buttons_block_3">
+                        <!-- Generate Button -->
+                        <input class="tool_form_button" type="button" id="mode_0" name="mode_0" value="Increment"></input>
+                        <!-- JQuery Script for generating text-->
+                        <script>
+                            document.getElementById("mode_0").onclick = function() {
+                                
+                                // Sets visibility of elements
+                                $("#buttons_0").css("display", "grid");
+                                $("#buttons_1").css("display", "none");
+                                $("#settings_0").css("display", "grid");
+                                $("#settings_1").css("display", "none");
+                            }
+                        </script>
+                        <!-- Clipboard Button -->
+                        <input class="tool_form_button" type="button" id="mode_1" name="mode_1" value="Array"></input>
+                        <!-- JQuery Script for generating text-->
+                        <script>
+                            document.getElementById("mode_1").onclick = function() {
+                            
+                                // Sets visibility of elements
+                                $("#buttons_0").css("display", "none");
+                                $("#buttons_1").css("display", "grid");
+                                $("#settings_0").css("display", "none");
+                                $("#settings_1").css("display", "grid");
 
+                            }
+                        </script>
+                    </div>
                     <!-- Input -->
                     <label class="tool_form_label" for="input_text">Input Text</label>
                     <textarea class="tool_form_textarea" id="input_text" name="input_text">Replace: [x]</textarea>
                     
                     <!-- Settings -->
-                    <div class="tool_settings_block">
+                    <div class="tool_settings_block" id="settings_0">
                         <div class="tool_form_settings_option">
                             <label class="tool_form_label" for="setting_start">Start At</label>
                             <input class="tool_form_input" type="text" id="setting_start" name="setting_start" value="0"></textarea>
@@ -68,7 +98,21 @@
                         </div>
                     </div>
 
-                    <div class = "tool_buttons_block">
+                    
+                    <!-- Settings -->
+                    <div class="tool_settings_block_2" id="settings_1">
+                        <div class="tool_form_settings_option_2">
+                            <label class="tool_form_label" for="setting_list">List (Separated by commas)</label>
+                            <textarea class="tool_form_input" type="text" id="setting_list" name="setting_list">spruce,birch,jungle</textarea>
+                        </div>
+                        <div class="tool_form_settings_option_2">
+                            <label class="tool_form_label" for="setting_replace_2">Replace</label>
+                            <input class="tool_form_input" type="text" id="setting_replace_2" name="setting_replace_2" value="oak"></input>
+                        </div>
+                    </div>
+                    
+                <!--  Number based iterator controls  -->
+                    <div class = "tool_buttons_block" id="buttons_0">
                     <!-- Generate Button -->
                     <input class="tool_form_button" type="button" id="input_button" name="input_button" value="Generate"></input>
                     <!-- JQuery Script for generating text-->
@@ -162,6 +206,59 @@
 
                         }
                     </script>
+                    </div>
+
+                <!--  CSV based iterator controls  -->
+                    <div class = "tool_buttons_block_2" id="buttons_1">
+                        <!-- Generate Button -->
+                        <input class="tool_form_button" type="button" id="input_button_2" name="input_button_2" value="Generate2"></input>
+                        <!-- JQuery Script for generating text-->
+                        <script>
+                            document.getElementById("input_button_2").onclick = function() {
+
+                                // Collects user input
+                                var input_text = $("#input_text").val();
+
+                                var setting_list = $("#setting_list").val();
+                                var setting_replace = $("#setting_replace").val();
+
+                                // Splits the list based on values
+                                var split_list = setting_list.split(",");
+
+                                // Creates an output
+                                var output = "";
+
+                                // For each item in the list, add to the output
+                                for (let i = 0; i < split_list.length; i++) {
+
+                                    // \n case
+                                    if (i < split_list.length-1) {
+                                        output += input_text.replaceAll(setting_replace, split_list[i]) + "\n";
+                                    // no \n case
+                                    } else {
+                                        output += input_text.replaceAll(setting_replace, split_list[i]);
+                                    }
+
+                                }
+
+
+                                $("#output_text").val(output);
+
+                            }
+                        </script>
+                    <!-- Clipboard Button -->
+                    <input class="tool_form_button" type="button" id="copy_button_2" name="copy_button_2" value="Copy2"></input>
+                        <!-- JQuery Script for generating text-->
+                        <script>
+                            document.getElementById("copy_button_2").onclick = function() {
+                                
+                                // Copies output to clipboard
+                                var output_text = $("#output_text").val()
+
+                                navigator.clipboard.writeText(output_text);
+
+                            }
+                        </script>
                     </div>
                     <!-- Output -->
                     <label class="tool_form_label" for="output_text">Output Text</label>

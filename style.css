@@ -597,6 +597,9 @@ button {
     color:white;
     padding:10px;
 
+    outline:none;
+    border:none;
+
     border-color:#001010;
     line-height: 17px;
 
@@ -613,10 +616,26 @@ button {
 }
 
 .tool_form_settings_option {
-
     display:block;
     width:90%;
     height:auto;
+
+
+    align-self: center;
+    margin:auto;
+}
+
+
+.tool_form_settings_option_2 {
+
+    
+    display:block;
+    width:100%;
+    height:auto;
+
+
+    align-self: center;
+    margin:auto;
 
 }
 
@@ -630,7 +649,7 @@ button {
     border-color:#001010;
 
     margin:auto;
-    width:95%;
+    width:95%px;
     max-width:95%;
     min-width:95%;
     height:auto;
@@ -639,6 +658,9 @@ button {
     font-weight: normal;
 
     line-height:20px;
+
+    outline:none;
+    border:none;
 }
 
 .tool_settings_block {
@@ -646,6 +668,7 @@ button {
     grid-template-columns: 20.0% 20.0% 20.0% 20.0% 20.0%;
     grid-auto-rows: auto;
 
+    align-self:center;
     margin:auto;
     width:95%;
 }
@@ -661,6 +684,23 @@ button {
     }
 }
 
+.tool_settings_block_2 {
+    display:none;
+    grid-template-columns: 80.0% 20.0%;
+    grid-auto-rows: auto;
+
+    align-self:center;
+    margin:auto;
+    width:95%;
+}
+
+@media screen and (max-width: 1000px) {
+    .tool_settings_block_2 {
+        grid-template-columns: 100%;
+    }
+}
+
+/* Smaller button fill */
 .tool_form_button {
     display:block;
     background-color: #405050;
@@ -683,6 +723,7 @@ button {
     line-height:20px;
 
     outline:none;
+    border:none;
 }
 
 /* Sets hover color for navbar items */
@@ -690,7 +731,12 @@ button {
     background-color: #406060;
 }
 
-/* Update to css */
+/* Sets hover color for navbar items */
+.tool_form_button:active {
+    background-color: #3A7474;
+}
+
+/* First button set for iterator */
 .tool_buttons_block {
     display:grid;
     grid-template-columns: 50.0% 50.0%;
@@ -699,6 +745,56 @@ button {
     margin:auto;
     width:360px;
 }
+
+/* 2nd button set for iterator */
+.tool_buttons_block_2 {
+    display:none;
+    grid-template-columns: 50.0% 50.0%;
+    grid-auto-rows: auto;
+
+    margin:auto;
+    width:360px;
+}
+
+/* Mode button set for iterator */
+.tool_buttons_block_3 {
+    display:grid;
+    grid-template-columns: 50.0% 50.0%;
+    grid-auto-rows: auto;
+
+    margin:auto;
+    width:95%;
+}
+
+/* Scroll bar code taken and edited from : https://stackoverflow.com/questions/15420314/how-to-make-custom-scrollbars-show-in-all-browsers */
+/* Set the scrollbar color | Firefox */ 
+html{
+    scrollbar-color: #304040 #102020;
+}
+
+/* Scroll bar code taken and edited from : https://stackoverflow.com/questions/15420314/how-to-make-custom-scrollbars-show-in-all-browsers */
+/* Set the scrollbar color */ 
+/*! Set the scrollbar color | !Firefox */
+html {
+    /* Sets variables for scrollbar colors */
+    --color0: #102020;
+    --color1: #304040;
+  }
+
+  body {
+    scrollbar-color: var(--color1) var(--color0);
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--color0);
+    
+  }
+  /* Webkit resizer */
+  textarea::-webkit-resizer {
+    background: #304040;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--color1);
+  }
 
 /* Project title text data
 .project_title_text {
