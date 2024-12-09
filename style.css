@@ -615,6 +615,32 @@ button {
     font-weight: normal;
 }
 
+.tool_form_textarea_2 {
+    display:block;
+    background-color: #001010;
+
+    color:white;
+    padding:10px;
+
+    outline:none;
+    border:none;
+
+    border-color:#001010;
+    line-height: 17px;
+
+    margin:auto;
+    width:95%;
+    max-width:95%;
+    min-width:95%;
+    height:auto;
+    min-height:400px;
+
+    overflow-y:scroll;
+
+    font-family:'minecraft', sans-serif;
+    font-weight: normal;
+}
+
 .tool_form_settings_option {
     display:block;
     width:90%;
@@ -649,7 +675,7 @@ button {
     border-color:#001010;
 
     margin:auto;
-    width:95%px;
+    width:95%;
     max-width:95%;
     min-width:95%;
     height:auto;
@@ -766,6 +792,170 @@ button {
     width:95%;
 }
 
+.item_content_main_block {
+    display:grid;
+    grid-template-columns: 70% 30%;
+    grid-auto-rows:100%;
+
+    margin:auto;
+    width:100%;
+}
+
+.item_output_button_block {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows:100%;
+
+    margin:auto;
+    width:100%;
+}
+
+.item_input_section {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows:auto;
+
+    row-gap:20px;
+    margin:auto;
+    width:95%;
+}
+
+.item_input_block {
+    background-color: #304040;
+    width:95%;
+    height:100%;
+    align-self: center;
+}
+
+.item_input_block_title {
+    align-self:center;
+    text-align:center;
+    color:white;
+    background-color: #102020;
+}
+
+.item_input_block_settings {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    align-self:center;
+    text-align:center;
+    color:white;
+    row-gap:14px;
+    margin:12px;
+}
+
+.item_input_block_settings_2 {
+    display:grid;
+    grid-template-columns: 100%;
+    align-self:center;
+    text-align:center;
+    color:white;
+    row-gap:14px;
+    margin:12px;
+}
+
+/* Label for each setting */
+.item_setting_label {
+    display:auto;
+    align-self:right;
+    text-align:right;
+    color:white;
+    width:95%;
+    font-size: 16px;
+}
+
+/* Label for each setting */
+.item_setting_label_2 {
+    display:auto;
+    align-self:left;
+    text-align:left;
+    color:white;
+    width:100%;
+    font-size: 16px;
+    margin:10px;
+    margin-bottom:2px;
+}
+
+.item_setting_textarea_block {
+    display:grid;
+    align-self:center;
+    align-items:center;
+    grid-auto-columns: 100%;
+    background-color:#203030;
+    width:100%;
+}
+
+/* Setting for each input */
+.item_setting_input {
+    display:block;
+    align-self:left;
+    width:90%;
+    margin-top: -9px;
+
+    background-color: #001010;
+    border-color:#001010;
+    color:white;
+
+    padding:5px;
+
+    font-family:'minecraft', sans-serif;
+    font-weight: normal;
+
+    line-height:20px;
+
+    outline:none;
+    border:none;
+}
+
+.item_setting_input_2 {
+    
+    display:block;
+    align-self:left;
+    background-color: #001010;
+
+    color:white;
+    padding:5px;
+
+    outline:none;
+    border:none;
+
+    line-height: 20px;
+
+    margin:auto;
+    width:95%;
+    max-width:95%;
+    min-width:95%;
+    height:auto;
+    min-height:35px;
+
+    overflow-y:scroll;
+
+    font-family:'minecraft', sans-serif;
+    font-weight: normal;
+
+}
+
+/* Setting for each input */
+.item_setting_select {
+    display:block;
+    align-self:left;
+    width: 100%;
+    margin-top: -9px;
+
+    background-color: #001010;
+    border-color:#001010;
+    color:white;
+
+    padding:5px;
+
+    font-family:'minecraft', sans-serif;
+    font-weight: normal;
+
+    line-height:20px;
+
+    outline:none;
+    border:none;
+}
 /* Scroll bar code taken and edited from : https://stackoverflow.com/questions/15420314/how-to-make-custom-scrollbars-show-in-all-browsers */
 /* Set the scrollbar color | Firefox */ 
 html{
@@ -779,22 +969,21 @@ html {
     /* Sets variables for scrollbar colors */
     --color0: #102020;
     --color1: #304040;
-  }
+}
 
-  body {
+body {
     scrollbar-color: var(--color1) var(--color0);
-  }
-  body::-webkit-scrollbar-track {
-    background: var(--color0);
-    
-  }
-  /* Webkit resizer */
-  textarea::-webkit-resizer {
+}
+body::-webkit-scrollbar-track {
+    background: var(--color0); 
+}
+/* Webkit resizer */
+textarea::-webkit-resizer {
     background: #304040;
-  }
-  body::-webkit-scrollbar-thumb {
+}
+body::-webkit-scrollbar-thumb {
     background-color: var(--color1);
-  }
+}
 
 /* Project title text data
 .project_title_text {

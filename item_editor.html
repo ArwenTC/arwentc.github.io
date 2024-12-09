@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" spellcheck="false">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" href="images/other/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>ArwenOC - Tool | Item Editor</title>
+
+        <!-- Link info -->
+        <meta property="og:type" content="arwentc.github.io">
+        <meta property="og:url" content="https://arwentc.github.io/uuid.html">
+        <meta property="og:title" content="ArwenOC - Tools | Item Editor">
+        <meta property="og:description" content="Generates an item with components.">
+        <meta property="og:image" content="https://arwentc.github.io/images/other/logo.png">
+    </head>
+    <body>
+        <div class="navbar" id="nav">
+            <div class="navbar_left", id="nav_icon">
+                <a class= "nav_icon">
+                    <img src="images/other/logo.png", class="nav_icon_img"></img>
+                </a>
+            </div> 
+            <div class="navbar_left">
+                <a href="index.html"class="nav_link">Home</a>
+            </div>
+            <div class="navbar_left">
+                <a href="./projects.html"class="nav_link">Projects</a>
+            </div>
+            <a href="./portfolio.html"class="nav_link", class="mobile_visible">Portfolio</a>
+            <a href="./tools.html"class="nav_link active">Tools</a>
+            <div class="navbar_right">
+                <a href="./contact.html"class="nav_link">Contact Me</a>
+            </div>
+            <!-- Creates a hamburger drop down menu, running hamburger() on click -->
+            <button href="javascript:void(0);" class="icon" onclick="hamburger()">
+                <img class="hamburger", src="images/hamburger.png", id="hamburger">
+            </button>
+        </div>
+
+        <div class="content_background">
+            <div class="content_area">
+                <h1 class="title_center">Item Editor</h1>
+                <p class="content_center">Generates Item given Options.</p>
+                <div class="item_content_main_block">
+                
+                    <!-- Item Input -->
+                    <div class="item_input_section">
+                        <!--
+                        <label class="tool_form_label" for="input_text">Input</label>
+                        <textarea class="tool_form_textarea" id="input_text" name="input_text">Jeb_</textarea>
+                        -->
+                        <div class=item_input_block>
+                            <p class=item_input_block_title>General</p>
+                            <div class=item_input_block_settings>
+                                <label class=item_setting_label for="setting_0">Selector:</label>
+                                <input class=item_setting_input type="text" id="setting_0" name="setting_0" value="@s"></textarea>
+                                <label class=item_setting_label for="setting_1">Slot:</label>
+                                <select class=item_setting_select name="setting_1" id="setting_1">
+                                    <option value="weapon.mainhand">weapon.mainhand</option>
+                                    <option value="weapon.offhand">weapon.offhand</option>
+                                    <option value="armor.head">armor.head</option>
+                                    <option value="armor.chest">armor.chest</option>
+                                    <option value="armor.legs">armor.legs</option>
+                                    <option value="armor.feet">armor.feet</option>
+                                    <option value="armor.body">armor.body</option>
+                                    <option value="hotbar.0">hotbar.0</option>
+                                    <option value="hotbar.1">hotbar.1</option>
+                                    <option value="hotbar.2">hotbar.2</option>
+                                    <option value="hotbar.3">hotbar.3</option>
+                                    <option value="hotbar.4">hotbar.4</option>
+                                    <option value="hotbar.5">hotbar.5</option>
+                                    <option value="hotbar.6">hotbar.6</option>
+                                    <option value="hotbar.7">hotbar.7</option>
+                                    <option value="hotbar.8">hotbar.8</option>
+                                    <option value="inventory.0">inventory.0</option>
+                                    <option value="inventory.1">inventory.1</option>
+                                    <option value="inventory.2">inventory.2</option>
+                                    <option value="inventory.3">inventory.3</option>
+                                    <option value="inventory.4">inventory.4</option>
+                                    <option value="inventory.5">inventory.5</option>
+                                    <option value="inventory.6">inventory.6</option>
+                                    <option value="inventory.7">inventory.7</option>
+                                    <option value="inventory.8">inventory.8</option>
+                                    <option value="inventory.9">inventory.9</option>
+                                    <option value="inventory.10">inventory.10</option>
+                                    <option value="inventory.11">inventory.11</option>
+                                    <option value="inventory.12">inventory.12</option>
+                                    <option value="inventory.13">inventory.13</option>
+                                    <option value="inventory.14">inventory.14</option>
+                                    <option value="inventory.15">inventory.15</option>
+                                    <option value="inventory.16">inventory.16</option>
+                                    <option value="inventory.17">inventory.17</option>
+                                    <option value="inventory.18">inventory.18</option>
+                                    <option value="inventory.19">inventory.19</option>
+                                    <option value="inventory.20">inventory.20</option>
+                                    <option value="inventory.21">inventory.21</option>
+                                    <option value="inventory.22">inventory.22</option>
+                                    <option value="inventory.23">inventory.23</option>
+                                    <option value="inventory.24">inventory.24</option>
+                                    <option value="inventory.25">inventory.25</option>
+                                    <option value="inventory.26">inventory.26</option>
+                                    <option value="player.crafting.0">player.crafting.0</option>
+                                    <option value="player.crafting.1">player.crafting.1</option>
+                                    <option value="player.crafting.2">player.crafting.2</option>
+                                    <option value="player.crafting.3">player.crafting.3</option>
+                                    <option value="enderchest.0">enderchest.0</option>
+                                    <option value="enderchest.1">enderchest.1</option>
+                                    <option value="enderchest.2">enderchest.2</option>
+                                    <option value="enderchest.3">enderchest.3</option>
+                                    <option value="enderchest.4">enderchest.4</option>
+                                    <option value="enderchest.5">enderchest.5</option>
+                                    <option value="enderchest.6">enderchest.6</option>
+                                    <option value="enderchest.7">enderchest.7</option>
+                                    <option value="enderchest.8">enderchest.8</option>
+                                    <option value="enderchest.9">enderchest.9</option>
+                                    <option value="enderchest.10">enderchest.10</option>
+                                    <option value="enderchest.11">enderchest.11</option>
+                                    <option value="enderchest.12">enderchest.12</option>
+                                    <option value="enderchest.13">enderchest.13</option>
+                                    <option value="enderchest.14">enderchest.14</option>
+                                    <option value="enderchest.15">enderchest.15</option>
+                                    <option value="enderchest.16">enderchest.16</option>
+                                    <option value="enderchest.17">enderchest.17</option>
+                                    <option value="enderchest.18">enderchest.18</option>
+                                    <option value="enderchest.19">enderchest.19</option>
+                                    <option value="enderchest.20">enderchest.20</option>
+                                    <option value="enderchest.21">enderchest.21</option>
+                                    <option value="enderchest.22">enderchest.22</option>
+                                    <option value="enderchest.23">enderchest.23</option>
+                                    <option value="enderchest.24">enderchest.24</option>
+                                    <option value="enderchest.25">enderchest.25</option>
+                                    <option value="enderchest.26">enderchest.26</option>
+                                    <option value="container.0">container.0</option>
+                                    <option value="container.1">container.1</option>
+                                    <option value="container.2">container.2</option>
+                                    <option value="container.3">container.3</option>
+                                    <option value="container.4">container.4</option>
+                                    <option value="container.5">container.5</option>
+                                    <option value="container.6">container.6</option>
+                                    <option value="container.7">container.7</option>
+                                    <option value="container.8">container.8</option>
+                                    <option value="container.9">container.9</option>
+                                    <option value="container.10">container.10</option>
+                                    <option value="container.11">container.11</option>
+                                    <option value="container.12">container.12</option>
+                                    <option value="container.13">container.13</option>
+                                    <option value="container.14">container.14</option>
+                                    <option value="container.15">container.15</option>
+                                    <option value="container.16">container.16</option>
+                                    <option value="container.17">container.17</option>
+                                    <option value="container.18">container.18</option>
+                                    <option value="container.19">container.19</option>
+                                    <option value="container.20">container.20</option>
+                                    <option value="container.21">container.21</option>
+                                    <option value="container.22">container.22</option>
+                                    <option value="container.23">container.23</option>
+                                    <option value="container.24">container.24</option>
+                                    <option value="container.25">container.25</option>
+                                    <option value="container.26">container.26</option>
+                                    <option value="container.27">container.27</option>
+                                    <option value="container.28">container.28</option>
+                                    <option value="container.29">container.29</option>
+                                    <option value="container.30">container.30</option>
+                                    <option value="container.31">container.31</option>
+                                    <option value="container.32">container.32</option>
+                                    <option value="container.33">container.33</option>
+                                    <option value="container.34">container.34</option>
+                                    <option value="container.35">container.35</option>
+                                    <option value="container.36">container.36</option>
+                                    <option value="container.37">container.37</option>
+                                    <option value="container.38">container.38</option>
+                                    <option value="container.39">container.39</option>
+                                    <option value="container.40">container.40</option>
+                                    <option value="container.41">container.41</option>
+                                    <option value="container.42">container.42</option>
+                                    <option value="container.43">container.43</option>
+                                    <option value="container.44">container.44</option>
+                                    <option value="container.45">container.45</option>
+                                    <option value="container.46">container.46</option>
+                                    <option value="container.47">container.47</option>
+                                    <option value="container.48">container.48</option>
+                                    <option value="container.49">container.49</option>
+                                    <option value="container.50">container.50</option>
+                                    <option value="container.51">container.51</option>
+                                    <option value="container.52">container.52</option>
+                                    <option value="container.53">container.53</option>
+                                </select>
+                                <label class=item_setting_label for="setting_2">Item Name:</label>
+                                <input class=item_setting_input type="text" id="setting_2" name="setting_2" value="minecraft:potato"></textarea>
+                                <label class=item_setting_label for="setting_3">Count:</label>
+                                <input class=item_setting_input type="text" id="setting_3" name="setting_3" value="1"></textarea>
+                            </div>
+                        </div>
+                        <div class=item_input_block>
+                            <p class=item_input_block_title>Display</p>
+                            <div class="item_input_block_settings">
+                                <label class=item_setting_label for="setting_3">Count:</label>
+                                <input class=item_setting_input type="text" id="setting_3" name="setting_3" value="1"></textarea>
+                                <label class=item_setting_label for="setting_3">Count:</label>
+                                <input class=item_setting_input type="text" id="setting_3" name="setting_3" value="1"></textarea>
+                                <label class=item_setting_label for="setting_3">Count:</label>
+                                <input class=item_setting_input type="text" id="setting_3" name="setting_3" value="1"></textarea>
+                            </div>
+                            <div class=item_input_block_settings_2>
+                                <div class="item_setting_textarea_block">
+                                    <label class=item_setting_label_2 for="setting_4">Custom Name:</label>
+                                    <textarea class=item_setting_input_2 type="text" id="setting_4" name="setting_4">'{"text":"","italic":false}'</textarea>
+                                </div>
+                            </div>
+                            <div class=item_input_block_settings_2>
+                                <div class="item_setting_textarea_block">
+                                    <label class=item_setting_label_2 for="setting_5">Lore:</label>
+                                    <textarea class=item_setting_input_2 type="text" id="setting_5" name="setting_5">['{"text":"","italic":false}']</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=item_input_block>
+                            <p class=item_input_block_title>Display</p>
+                            <div class="item_input_block_settings">
+                                <label class=item_setting_label for="setting_3">Count:</label>
+                                <input class=item_setting_input type="text" id="setting_3" name="setting_3" value="1"></textarea>
+                                <label class=item_setting_label for="setting_3">Count:</label>
+                                <input class=item_setting_input type="text" id="setting_3" name="setting_3" value="1"></textarea>
+                                <label class=item_setting_label for="setting_3">Count:</label>
+                                <input class=item_setting_input type="text" id="setting_3" name="setting_3" value="1"></textarea>
+                            </div>
+                            <div class=item_input_block_settings_2>
+                                <div class="item_setting_textarea_block">
+                                    <label class=item_setting_label_2 for="setting_4">Custom Name:</label>
+                                    <textarea class=item_setting_input_2 type="text" id="setting_4" name="setting_4">'{"text":"","italic":false}'</textarea>
+                                </div>
+                            </div>
+                            <div class=item_input_block_settings_2>
+                                <div class="item_setting_textarea_block">
+                                    <label class=item_setting_label_2 for="setting_5">Lore:</label>
+                                    <textarea class=item_setting_input_2 type="text" id="setting_5" name="setting_5">['{"text":"","italic":false}']</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=item_input_block>
+                            <p class=item_input_block_title>Display</p>
+                            <div class="item_input_block_settings">
+                                <label class=item_setting_label for="setting_3">Count:</label>
+                                <input class=item_setting_input type="text" id="setting_3" name="setting_3" value="1"></textarea>
+                                <label class=item_setting_label for="setting_3">Count:</label>
+                                <input class=item_setting_input type="text" id="setting_3" name="setting_3" value="1"></textarea>
+                                <label class=item_setting_label for="setting_3">Count:</label>
+                                <input class=item_setting_input type="text" id="setting_3" name="setting_3" value="1"></textarea>
+                            </div>
+                            <div class=item_input_block_settings_2>
+                                <div class="item_setting_textarea_block">
+                                    <label class=item_setting_label_2 for="setting_4">Custom Name:</label>
+                                    <textarea class=item_setting_input_2 type="text" id="setting_4" name="setting_4">'{"text":"","italic":false}'</textarea>
+                                </div>
+                            </div>
+                            <div class=item_input_block_settings_2>
+                                <div class="item_setting_textarea_block">
+                                    <label class=item_setting_label_2 for="setting_5">Lore:</label>
+                                    <textarea class=item_setting_input_2 type="text" id="setting_5" name="setting_5">['{"text":"","italic":false}']</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+
+                    <div>
+                        <div class="item_output_button_block">
+                            <!-- Generate Item Button -->
+                            <input class="tool_form_button" type="button" id="generate_item" name="generate_item" value="Generate" href="javascript:void(0);" onclick="generateItem()"></input>
+                            <!-- Script for item generator -->
+                            <script src='item_editor.js'></script>
+                            
+                            <!-- Copy Output Button -->
+                            <input class="tool_form_button" type="button" id="copy_output" name="copy_output" value="Copy" href="javascript:void(0);" onclick="copyOutput()"></input>
+                            <!-- Script for copy output -->
+                            <script src='item_editor.js'></script>
+                        </div>
+
+                        <!-- Item Ouput -->
+                        <label class="tool_form_label" for="input_text">Output</label>
+                        <textarea class="tool_form_textarea_2" id="output_text" name="output_text"></textarea>
+                    </div>
+                </div>
+                
+                <a href="./index.html"><p class="content_center">Return to home</p></a>
+            </div>
+        </div>
+    <script src='scripts.js'></script>
+    </body>
+</html>
