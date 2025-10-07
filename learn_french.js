@@ -287,9 +287,8 @@ function changedSet(select) {
 
 // Runs when the page is loaded
 document.addEventListener('DOMContentLoaded', function() {
+        loadFile("french_vocab_chapter_1");
+        
         // Get a new question
         nextQuestion();
-
-        loadFile("french_vocab_chapter_1");
-
     });
