@@ -1000,6 +1000,18 @@ button {
     background-color: 001010;
 }
 
+/* First button set for iterator */
+.tool_buttons_block_6 {
+    display:grid;
+    grid-template-columns: 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1%;
+    grid-auto-rows: auto;
+
+    margin:auto;
+    width:480px;
+
+    background-color: 001010;
+}
+
 .item_content_main_block {
     display:grid;
     grid-template-columns: 70% 30%;

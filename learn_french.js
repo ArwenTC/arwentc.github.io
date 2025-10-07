@@ -120,6 +120,7 @@ function lastQuestion() {
 function question0(question_seed) {
   // Hidden / Not Hidden
   document.getElementById("short_answer_div").hidden = false;
+  document.getElementById("special_character_div").hidden = false;
   document.getElementById("multiple_choice_div").hidden = true;
 
   // Create new LCG
@@ -137,6 +138,7 @@ function question0(question_seed) {
 function question1(question_seed) {
   // Hidden / Not Hidden
   document.getElementById("short_answer_div").hidden = false;
+  document.getElementById("special_character_div").hidden = false;
   document.getElementById("multiple_choice_div").hidden = true;
 
   // Create new LCG
@@ -156,6 +158,7 @@ function question1(question_seed) {
 function question2(question_seed) {
   // Hidden / Not Hidden
   document.getElementById("short_answer_div").hidden = true;
+  document.getElementById("special_character_div").hidden = true;
   document.getElementById("multiple_choice_div").hidden = false;
 
   // Create new LCG
@@ -184,6 +187,7 @@ function question2(question_seed) {
 function question3(question_seed) {
   // Hidden / Not Hidden
   document.getElementById("short_answer_div").hidden = true;
+  document.getElementById("special_character_div").hidden = true;
   document.getElementById("multiple_choice_div").hidden = false;
 
   // Create new LCG
@@ -250,6 +254,13 @@ function mc_answer(button) {
     button.style.background = "#304040";
     button.style.color = "#506060";
   }
+}
+
+// Add special character to textarea
+function input_char(character) {
+  textarea = document.getElementById("short_answer_textarea");
+  textarea.value = textarea.value + character;
+  textarea.focus();
 }
 
 function loadFile(file_name) {
