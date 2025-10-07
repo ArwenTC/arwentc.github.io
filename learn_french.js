@@ -243,11 +243,11 @@ function mc_answer(button) {
       }, 1000); // 1000 milliseconds = 1 second
 
     button.style.background = "#208030";
-    button.style.color = "#506060";
+    button.style.color = "#ffffff";
   } else {
     document.getElementById("answer_result").innerHTML = "Incorrect.";
 
-    button.style.background = "#203030";
+    button.style.background = "#304040";
     button.style.color = "#506060";
   }
 }
