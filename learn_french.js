@@ -259,8 +259,8 @@ function loadFile(file_name) {
   sets = text.split("\n");
   for (i of sets) {
     words = i.split()
-    set_0.append(""+words[0]);
-    set_1.append(""+words[1]);
+    set_0.push(""+words[0].strip());
+    set_1.push(""+words[1].strip());
   }
 
   // Get the next question
