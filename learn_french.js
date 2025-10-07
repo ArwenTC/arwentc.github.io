@@ -243,13 +243,13 @@ function mc_answer(input_answer) {
 function loadFile(file_name) {
 
   // Hold text
-  text = "";
+  word_list_text = "";
 
   // Get file
   fetch("/word_list/"+file_name+".txt")
   .then(response => response.text())
   .then(text => {
-    console.log(text);
+    word_list_text = text;
   })
 
   // Empty the word sets
@@ -257,7 +257,7 @@ function loadFile(file_name) {
   set_1 = [];
   
   // Split and store length
-  sets = text.split("\n");
+  sets = word_list_text.split("\n");
   set_size = sets.length;
 
   // Split words
