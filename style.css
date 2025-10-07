@@ -335,6 +335,17 @@ button {
     text-decoration: none;
 }
 
+.content_center_1 {
+    /*margin-left:10px;*/
+    text-align:center;
+    color:white;
+    text-decoration: none;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 /*
 
 ### Project Items
