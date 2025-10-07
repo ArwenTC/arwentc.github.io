@@ -120,7 +120,7 @@ function lastQuestion() {
 function question0(question_seed) {
   // Hidden / Not Hidden
   document.getElementById("short_answer_div").hidden = false;
-  document.getElementById("special_character_div").hidden = false;
+  document.getElementById("special_character_div").hidden = true;
   document.getElementById("multiple_choice_div").hidden = true;
 
   // Create new LCG
