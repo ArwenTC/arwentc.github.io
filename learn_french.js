@@ -77,6 +77,9 @@ function nextQuestion() {
   document.getElementById("answer_result").hidden = true;
   document.getElementById("short_answer_textarea").value = "";
   
+  // Reset buttons
+  resetButtons();
+  
   // Runs a function question based on random
   r = rng.next();
   if(r < 2500) {
@@ -95,6 +98,9 @@ function lastQuestion() {
   
   // hides result
   document.getElementById("answer_result").hidden = true;
+
+  // Reset buttons
+  resetButtons();
 
   // Runs a function question based on random
   r = rng.prev();
@@ -219,24 +225,30 @@ function checkAnswer() {
         nextQuestion();
       }, 1000); // 1000 milliseconds = 1 second
   } else {
-    document.getElementById("answer_result").innerHTML = "Incorrect.";
+    document.getElementById("answer_result").innerHTML = "Incorrect | " + current_answer;
   }
 }
 
 // Option 0 Button
-function mc_answer(input_answer) {
+function mc_answer(button) {
   // Unhides result
   document.getElementById("answer_result").hidden = false;
 
   // Displays answer
-  if (input_answer == current_answer) {
+  if (button.value == current_answer) {
     document.getElementById("answer_result").innerHTML = "Correct!";
     // Goes to next question
     setTimeout(() => {
         nextQuestion();
       }, 1000); // 1000 milliseconds = 1 second
+
+    button.style.background = "#208030";
+    button.style.color = "#506060";
   } else {
     document.getElementById("answer_result").innerHTML = "Incorrect.";
+
+    button.style.background = "#203030";
+    button.style.color = "#506060";
   }
 }
 
@@ -271,17 +283,27 @@ function loadFile(file_name) {
 
 // Change the set based on the selection
 function changedSet(select) {
-  if(select.value == "FR 151 Vocab - Chapter 1") {
+  if(select.value == "FR 151 Vocab - Preliminary") {
     loadFile("fr_151_0");
-  } else if (select.value == "FR 151 Vocab - Preliminary") {
+  } else if (select.value == "FR 151 Vocab - Chapter 1") {
     loadFile("fr_151_1");
   }
 }
 
+function resetButtons() {
+    // List of MC Button
+    mc_button = [document.getElementById("mc_button_0"),document.getElementById("mc_button_1"),document.getElementById("mc_button_2"),document.getElementById("mc_button_3")];
+    // Create Multiple Choice Elements
+    for (const i of mc_button) {
+      i.style.background = "#405050";
+      i.style.color = "#ffffff";
+    }
+
+}
 
 // Runs when the page is loaded
 document.addEventListener('DOMContentLoaded', function() {
-        loadFile("fr_151_1");
+        loadFile("fr_151_0");
         
         // Get a new question
         nextQuestion();
