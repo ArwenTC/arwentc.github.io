@@ -268,6 +268,15 @@ function loadFile(file_name) {
 
 }
 
+// Change the set based on the selection
+function changedSet(select) {
+  if(select.value == "FR 151 Vocab - Chapter 1") {
+    loadFile("fr_151_0");
+  } else if (select.value == "FR 151 Vocab - Preliminary") {
+    loadFile("fr_151_1");
+  }
+}
+
 
 // Runs when the page is loaded
 document.addEventListener('DOMContentLoaded', function() {
