@@ -262,7 +262,10 @@ function loadFile(file_name) {
 
   // Split words
   for (const i of sets) {
-    words = i.split("|")
+    words = i.split("|");
+    console.log(words);
+    console.log(words[0]);
+    console.log(words[1]);
     set_0.push(""+words[0].trim());
     set_1.push(""+words[1].trim());
   }
