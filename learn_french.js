@@ -258,7 +258,7 @@ function loadFile(file_name) {
   
   sets = text.split("\n");
   for (i of sets) {
-    words = i.split()
+    words = i.split("|")
     set_0.push(""+words[0].trim());
     set_1.push(""+words[1].trim());
   }

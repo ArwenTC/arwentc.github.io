@@ -23,3 +23,28 @@ Bien, merci!|Great, thanks!
 Ça va bien.|Things are going (well).
 Et vous? Vous êtes d'où?|And you? Where are you from? (formal)
 Et toi? Tu es d'où?|And you? Where are you from? (informal)
+Monsieur, je vous présente|Sir, I would like to introduce to you (formal)
+Je te présente|This is (informal)
+Voici|This is
+Qui est-ce?|Who is it?
+C'est|It's
+Ce sont|They are
+Comment s'appelle-t-il/elle?|What's his/her name?
+Il/Elle s'appelle|His/Her name is
+Il/Elle est de|He/She is from
+Comment s'appellent-ils/elles?|What are their names?
+Ils/Elles s'appellent|Their names are
+Qu'est-ce qu'il/elle fait?|What does he/she do?
+Qu'est-ce qu'ils/elles font?|What do they do?
+Il est/Elle est|He is/She is
+acteur/actrice|actor/actress
+architecte|architect
+chanteur/chanteuse|singer
+coiffeur/coiffeuse|hair dresser
+dentiste|dentist
+ingénieur|engineer
+journaliste|journalist
+médecin|doctor
+professeur|professor
+retraité/retraitée|retired man/woman
+stagiaire|intern
