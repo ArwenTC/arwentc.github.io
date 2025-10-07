@@ -1,0 +1,25 @@
+Monsieur|Sir
+Madame|Ma'am
+Mademoiselle|Miss
+Bonjour, Monsieur|Good day, Sir
+Bonsoir|Good evening
+Au revoir|Goodbye
+Salut!|Hi!
+À tout à l'heure!|See you in a little while.
+À ce soir.|See you this evening.
+À demain.|See you tomorrow.
+À bientôt.|See you soon.
+Comment vous appelez-vous?|What's your name? (formal)
+Comment tu t'appelles?|What's your name? (informal)
+Je m'appelle|My name is
+Comment allez-vous?|How are you? (formal)
+Comment vas-tu?|How are you? (informal)
+Je vais très bien, merci.|I am very well, thank you.
+Je vais bien, merci.|I am fine, thank you.
+Pas mal, merci.|Not bad, thank you.
+Comment ça va?|How are things going?
+Bien, merci!|Great, thanks!
+Ça va (bien)?|Are things going (well)?
+Ça va bien.|Things are going (well).
+Et vous? Vous êtes d'où?|And you? Where are you from? (formal)
+Et toi? Tu es d'où?|And you? Where are you from? (informal)

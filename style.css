@@ -574,6 +574,52 @@ button {
     font-weight: normal;
 }
 
+.tool_form_textarea_1 {
+    display:block;
+    background-color: #001010;
+
+    color:white;
+    padding:10px;
+
+    border-color:#001010;
+    line-height: 17px;
+    border-radius: 00px 00px 10px 10px;
+
+    margin:auto;
+    width:540px;
+    max-width:540px;
+    height:auto;
+
+    resize:none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tool_form_textarea_3 {
+    display:block;
+    background-color: #001010;
+
+    color:white;
+    padding:10px;
+
+    border-color:#001010;
+    line-height: 17px;
+    border-radius: 00px 00px 10px 10px;
+
+    margin:auto;
+    width:540px;
+    max-width:540px;
+    height:200px;
+
+    resize:vertical;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .tool_form_label {
     display:block;
     width:95%;
@@ -588,6 +634,70 @@ button {
     margin:auto;
     margin-top:5px;
     padding:10px;
+}
+
+.tool_form_label_1 {
+    display:block;
+    width:543px;
+    height:auto;
+    
+    color:white;
+    background-color:#102020;
+    
+    align-self:center;
+    text-align:center;
+
+    margin:auto;
+    margin-top:5px;
+    padding:10px;
+    
+}
+
+.tool_form_label_2 {
+    display:block;
+    width:543px;
+    height:auto;
+    
+    color:white;
+    background-color:#102020;
+    
+    align-self:center;
+    text-align:center;
+
+    margin:auto;
+    margin-top:5px;
+    padding:10px;
+    border-radius: 10px 10px 0px 0px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tool_flashcard_label {
+    display:block;
+    width:540px;
+    height:auto;
+    
+    border-radius: 30px; /* Apply rounded corners with a radius of 10px */
+    border-width: 0px 5px 10px 5px;
+    border-color: #001010;
+    border-style: solid;
+    
+    color:white;
+    background-color:#102020;
+    
+    align-self:center;
+    text-align:center;
+
+    margin:auto;
+    margin-top:5px;
+    margin-bottom:20px;
+    padding:100px 10px 100px 10px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .tool_form_textarea {
@@ -752,6 +862,38 @@ button {
     border:none;
 }
 
+/* Smaller button fill */
+.tool_form_button_1 {
+    display:block;
+    background-color: #405050;
+
+    color:white;
+    padding:10px;
+
+    border-radius: 10px; /* Apply rounded corners with a radius of 10px */
+    border-width: 0px 0px 5px 0px;
+    border-color: #001010;
+    border-style: solid;
+
+    margin:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+
+    width:95%;
+    height:auto;
+
+    font-family:'minecraft', sans-serif;
+    font-weight: normal;
+
+    line-height:20px;
+
+    outline:none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
 /* Sets hover color for navbar items */
 .tool_form_button:hover {
     background-color: #406060;
@@ -759,6 +901,16 @@ button {
 
 /* Sets hover color for navbar items */
 .tool_form_button:active {
+    background-color: #3A7474;
+}
+
+/* Sets hover color for navbar items */
+.tool_form_button_1:hover {
+    background-color: #406060;
+}
+
+/* Sets hover color for navbar items */
+.tool_form_button_1:active {
     background-color: #3A7474;
 }
 
@@ -790,6 +942,28 @@ button {
 
     margin:auto;
     width:95%;
+}
+
+/* First button set for iterator */
+.tool_buttons_block_4 {
+    display:grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: auto;
+
+    margin:auto;
+    width:480px;
+}
+
+/* First button set for iterator */
+.tool_buttons_block_5 {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: auto;
+
+    margin:auto;
+    width:640px;
+
+    background-color: 001010;
 }
 
 .item_content_main_block {

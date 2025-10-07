@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" href="images/other/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>ArwenOC - Tool | Learn French</title>
+
+        <!-- Link info -->
+        <meta property="og:type" content="arwentc.github.io">
+        <meta property="og:url" content="https://arwentc.github.io/learn_french.html">
+        <meta property="og:title" content="ArwenOC - Tools | Learn Vocab">
+        <meta property="og:description" content="Quizlet-Style Learn Feature.">
+        <meta property="og:image" content="https://arwentc.github.io/images/other/logo.png">
+    </head>
+    <body>
+        <div class="navbar" id="nav">
+            <div class="navbar_left", id="nav_icon">
+                <a class= "nav_icon">
+                    <img src="images/other/logo.png", class="nav_icon_img"></img>
+                </a>
+            </div> 
+            <div class="navbar_left">
+                <a href="index.html"class="nav_link">Home</a>
+            </div>
+            <div class="navbar_left">
+                <a href="./projects.html"class="nav_link">Projects</a>
+            </div>
+            <a href="./portfolio.html"class="nav_link", class="mobile_visible">Portfolio</a>
+            <a href="./tools.html"class="nav_link active">Tools</a>
+            <div class="navbar_right">
+                <a href="./contact.html"class="nav_link">Contact Me</a>
+            </div>
+            <!-- Creates a hamburger drop down menu, running hamburger() on click -->
+            <button href="javascript:void(0);" class="icon" onclick="hamburger()">
+                <img class="hamburger", src="images/hamburger.png", id="hamburger">
+            </button>
+        </div>
+
+        <div class="content_background">
+            <div class="content_area">
+                <h1 class="title_center">Learn French</h1>
+                <p class="content_center">Quizlet-Style Learn Feature.</p>
+                
+                <form class="tool_form">
+                    <!-- Input -->
+                    <label class="tool_flashcard_label" id="flashcard_label" for="input_text">Je m'apelle</label>
+                    
+                    <div id="short_answer_div" hidden>
+                        <label class="tool_form_label_2" for="input_text">Enter Answer</label>
+                        <textarea class="tool_form_textarea_1" id="short_answer_textarea" name="input_text"></textarea>
+                
+                        <div class = "tool_buttons_block_4" id="buttons_0">
+
+                            <!-- Clipboard Button -->
+                            <input class="tool_form_button_1" type="button" id="submit_button" name="copy_button" value="Check Answer" onclick="checkAnswer()"></input>
+
+                        </div>
+                    </div>
+                    
+                    <div id="multiple_choice_div" hidden>
+                        <label class="tool_form_label_2" for="input_text">Multiple Choice</label>
+                
+                        <div class = "tool_buttons_block_5" id="buttons_0">
+
+                            <!-- Choice 0 -->
+                            <input class="tool_form_button_1" type="button" id="mc_button_0" name="copy_button" value="1" onclick="mc_answer(this.value)"></input>
+
+                            <!-- Choice 1 -->
+                            <input class="tool_form_button_1" type="button" id="mc_button_1" name="copy_button" value="2" onclick="mc_answer(this.value)"></input>
+
+                            <!-- Choice 2 -->
+                            <input class="tool_form_button_1" type="button" id="mc_button_2" name="copy_button" value="3" onclick="mc_answer(this.value)"></input>
+                            
+                            <!-- Choice 3 -->
+                            <input class="tool_form_button_1" type="button" id="mc_button_3" name="copy_button" value="4" onclick="mc_answer(this.value)"></input>
+                    
+                        </div>
+                    </div>
+                    
+                    <p class="content_center" id="answer_result" hidden>Correct!</p>
+                    
+                    <div class = "tool_buttons_block" id="buttons_0">
+
+                        <!-- Left Button -->
+                        <input class="tool_form_button_1" type="button" id="left_button" name="left_button" value="<" onclick="lastQuestion()"></input>
+
+                        <!-- right Button -->
+                        <input class="tool_form_button_1" type="button" id="right_button" name="right_button" value=">" onclick="nextQuestion()"></input>                    
+                    </div>
+
+                    <div class="short_answer_div">
+                        <label class="tool_form_label_2" for="input_text">Word List</label>
+                        <textarea class="tool_form_textarea_3" id="short_answer_textarea" name="input_text"></textarea>
+                    </div>
+                    
+                </form>
+                <a href="./index.html"><p class="content_center">Return to home</p></a>
+            </div>
+        </div>
+    <script src='scripts.js'></script>
+    <script src='learn_french.js'></script>
+    </body>
+</html>
