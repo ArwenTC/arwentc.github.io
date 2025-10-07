@@ -1,1 +1,34 @@
-hello|hello
+Je m'appelle|My name is
+Je suis de|I am from
+Je suis étudiant en|I am a student in (male)
+Je suis étudiante en|I am a student in (female)
+Il/Elle s'appelle|His/Her name is
+Il/Elle est de|He/She is from
+Il est étudiant en|He is a student in (male)
+Elle est étudiante en|She is a student in (female)
+le commerce|business
+la comptabilité|accounting
+les langues|languages
+l'anglais|English
+le français|French
+l'espagnol|Spanish
+la littérature|literature
+l'histoire|history
+la géographie|geography
+les sciences politiques|political science
+les mathématiques/les maths|math
+les sciences|sciences
+la biologie|biology
+la chimie|chemistry
+l'informatique|computer science
+la musique|music
+la philosophie|philosophy
+la psychologie|psychology
+le cafard|cockroach
+le chat|cat
+la chatte|female cat
+la minette|kitty
+l'écureuil|squirrel
+l'escargot|snail
+la fourmi|ant
+le tatou|armadillo
