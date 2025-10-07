@@ -256,8 +256,12 @@ function loadFile(file_name) {
   set_0 = [];
   set_1 = [];
   
+  // Split and store length
   sets = text.split("\n");
-  for (i of sets) {
+  set_size = sets.length;
+
+  // Split words
+  for (const i of sets) {
     words = i.split("|")
     set_0.push(""+words[0].trim());
     set_1.push(""+words[1].trim());
