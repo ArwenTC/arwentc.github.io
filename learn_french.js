@@ -242,37 +242,31 @@ function mc_answer(input_answer) {
 
 function loadFile(file_name) {
 
-  // Hold text
-  word_list_text = "";
-
   // Get file
   fetch("/word_list/"+file_name+".txt")
   .then(response => response.text())
   .then(text => {
-    word_list_text = text;
+    // Empty the word sets
+    set_0 = [];
+    set_1 = [];
+    
+    // Split and store length
+    sets = text.split("\n");
+    set_size = sets.length;
+
+    // Split words
+    for (const i of sets) {
+      words = i.split("|");
+      console.log(words);
+      console.log(words[0]);
+      console.log(words[1]);
+      set_0.push(""+words[0].trim());
+      set_1.push(""+words[1].trim());
+    }
+
+    // Get the next question
+    nextQuestion();
   })
-
-  // Empty the word sets
-  set_0 = [];
-  set_1 = [];
-  
-  // Split and store length
-  sets = word_list_text.split("\n");
-  set_size = sets.length;
-
-  // Split words
-  for (const i of sets) {
-    words = i.split("|");
-    console.log(words);
-    console.log(words[0]);
-    console.log(words[1]);
-    set_0.push(""+words[0].trim());
-    set_1.push(""+words[1].trim());
-  }
-
-  // Get the next question
-  nextQuestion();
-
 }
 
 // Change the set based on the selection
@@ -287,7 +281,7 @@ function changedSet(select) {
 
 // Runs when the page is loaded
 document.addEventListener('DOMContentLoaded', function() {
-        loadFile("french_vocab_chapter_1");
+        loadFile("fr_151_1");
         
         // Get a new question
         nextQuestion();
