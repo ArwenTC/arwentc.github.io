@@ -597,6 +597,29 @@ button {
     font-weight: bold;
 }
 
+.tool_form_select {
+    display:block;
+    background-color: #001010;
+
+    color:white;
+    padding:10px;
+
+    border-color:#001010;
+    line-height: 17px;
+    border-radius: 00px 00px 10px 10px;
+
+    margin:auto;
+    width:562px;
+    max-width:562px;
+    height:auto;
+
+    resize:none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .tool_form_textarea_3 {
     display:block;
     background-color: #001010;

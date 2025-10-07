@@ -240,12 +240,32 @@ function mc_answer(input_answer) {
   }
 }
 
-function getFile(file_name) {
+function loadFile(file_name) {
+
+  // Hold text
+  text = "";
+
+  // Get file
   fetch("/word_list/"+file_name+".txt")
   .then(response => response.text())
   .then(text => {
     console.log(text);
   })
+
+  // Empty the word sets
+  set_0 = [];
+  set_1 = [];
+  
+  sets = text.split("\n");
+  for (i of sets) {
+    words = i.split()
+    set_0.append(""+words[0]);
+    set_1.append(""+words[1]);
+  }
+
+  // Get the next question
+  nextQuestion();
+
 }
 
 
@@ -254,6 +274,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Get a new question
         nextQuestion();
 
-        getFile("french_vocab_chapter_1");
+        loadFile("french_vocab_chapter_1");
 
     });
