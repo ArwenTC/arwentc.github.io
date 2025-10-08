@@ -597,7 +597,7 @@ button {
     border-radius: 00px 00px 10px 10px;
 
     margin:auto;
-    width:540px;
+    width:94%;
     max-width:540px;
     height:auto;
 
@@ -606,6 +606,15 @@ button {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: bold;
+}
+
+.short_answer_div {
+    display:grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: auto;
+
+    margin:auto;
+    max-width:540px;
 }
 
 .tool_form_select {
@@ -620,7 +629,7 @@ button {
     border-radius: 00px 00px 10px 10px;
 
     margin:auto;
-    width:562px;
+    width:100%;
     max-width:562px;
     height:auto;
 
@@ -672,7 +681,7 @@ button {
 
 .tool_form_label_1 {
     display:block;
-    width:543px;
+    max-width:543px;
     height:auto;
     
     color:white;
@@ -689,7 +698,8 @@ button {
 
 .tool_form_label_2 {
     display:block;
-    width:543px;
+    width:95%;
+    max-width:543px;
     height:auto;
     
     color:white;
@@ -710,7 +720,7 @@ button {
 
 .tool_flashcard_label {
     display:block;
-    width:540px;
+    max-width:540px;
     height:auto;
     
     border-radius: 30px; /* Apply rounded corners with a radius of 10px */
@@ -732,6 +742,14 @@ button {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     font-weight: bold;
+}
+
+@media screen and (max-width: 756px) {
+
+    .tool_flashcard_label {
+        padding:70px 10px 70px 10px;
+    }
+
 }
 
 .tool_form_textarea {
@@ -985,7 +1003,8 @@ button {
     grid-auto-rows: auto;
 
     margin:auto;
-    width:480px;
+    width:100%;
+    max-width:480px;
 }
 
 /* First button set for iterator */
@@ -995,7 +1014,7 @@ button {
     grid-auto-rows: auto;
 
     margin:auto;
-    width:640px;
+    max-width:640px;
 
     background-color: 001010;
 }
@@ -1007,7 +1026,19 @@ button {
     grid-auto-rows: auto;
 
     margin:auto;
-    width:480px;
+    max-width:480px;
+
+    background-color: 001010;
+}
+
+/* First button set for iterator */
+.tool_buttons_block_7 {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: auto;
+
+    margin:auto;
+    max-width:360px;
 
     background-color: 001010;
 }
