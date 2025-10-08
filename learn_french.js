@@ -104,11 +104,11 @@ function lastQuestion() {
 
   // Runs a function question based on random
   r = rng.prev();
-  if(r < 2500) {
+  if(r < 4000) {
     question0(r);
-  } else if (r < 5000) {
+  } else if (r < 8000) {
     question1(r);
-  } else if (r < 7500) {
+  } else if (r < 9000) {
     question2(r);
   } else if (r <= 10000) {
     question3(r);

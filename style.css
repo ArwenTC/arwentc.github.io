@@ -10,6 +10,10 @@
     src: url(./minecraft.bold.woff);
 }
 
+[hidden] {
+  display: none !important;
+}
+
 /* Removes color from visited links */
 a { text-decoration: none; }
 a:visited { text-decoration: none; }
